@@ -15,10 +15,12 @@ window.onload = function() {
     height: 300,
     onScanSuccess: function(result) {
       console.log('Scan Success', result);
+      alert("Scan Success");
       document.getElementById('message').textContent = result;
     },
     onScanError: function(error) {
       console.log('Scan Error', error);
+      alert("Scan Error");
       document.getElementById('message').textContent = 'No QR Code found';
     }
   });
